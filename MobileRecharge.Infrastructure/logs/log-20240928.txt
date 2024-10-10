@@ -1,0 +1,612 @@
+2024-09-28 10:47:21.668 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 10:47:21.831 +05:30 [INF] Hosting environment: Development
+2024-09-28 10:47:21.852 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 10:47:21.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 10:47:29.770 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 10:47:29.770 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 10:47:29.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 108.9035ms
+2024-09-28 10:47:29.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 7902.0530ms
+2024-09-28 10:52:13.245 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 10:52:13.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 10:52:13.358 +05:30 [INF] Hosting environment: Development
+2024-09-28 10:52:13.360 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 10:52:14.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 10:52:14.676 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 10:52:14.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1398.2793ms
+2024-09-28 10:52:14.829 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 153.7299ms
+2024-09-28 10:52:15.186 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 510.0968ms
+2024-09-28 10:52:16.235 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 10:52:19.898 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3662.2897ms
+2024-09-28 10:53:24.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/TopUp/topup-options - -
+2024-09-28 10:53:25.099 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.GetTopUpOptions (TopUpAPI)'
+2024-09-28 10:53:25.769 +05:30 [INF] Route matched with {action = "GetTopUpOptions", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTopUpOptions() on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 10:54:09.132 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 10:54:09.133 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpTotal' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 10:54:09.133 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpOption'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 10:54:09.133 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 10:54:09.134 +05:30 [WRN] No store type was specified for the decimal property 'Charge' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 10:54:09.134 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'User'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 10:54:24.228 +05:30 [INF] Executed DbCommand (1,326ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Amount]
+FROM [TopUpOptions] AS [t]
+2024-09-28 10:54:44.653 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TopUpAPI.Models.TopUpOption, TopUpAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-28 10:54:44.878 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.GetTopUpOptions (TopUpAPI) in 79099.1908ms
+2024-09-28 10:54:44.954 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.GetTopUpOptions (TopUpAPI)'
+2024-09-28 10:54:45.014 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/TopUp/topup-options - - - 200 - application/json;+charset=utf-8 80168.6196ms
+2024-09-28 11:04:33.160 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - -
+2024-09-28 11:04:33.169 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:04:33.394 +05:30 [INF] Route matched with {action = "GetBeneficiaries", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBeneficiaries(Int32) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:04:49.162 +05:30 [INF] Executed DbCommand (423ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM [Beneficiaries] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2024-09-28 11:05:15.926 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 11:05:15.986 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 11:05:16.051 +05:30 [INF] Hosting environment: Development
+2024-09-28 11:05:16.052 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 11:05:17.243 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 11:05:17.252 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 11:05:17.262 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1290.5692ms
+2024-09-28 11:05:17.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 28.4836ms
+2024-09-28 11:05:17.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 166.1395ms
+2024-09-28 11:05:17.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 11:05:17.839 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 335.4569ms
+2024-09-28 11:05:28.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - -
+2024-09-28 11:05:28.534 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:05:28.625 +05:30 [INF] Route matched with {action = "GetBeneficiaries", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBeneficiaries(Int32) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:05:38.427 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:05:38.428 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpTotal' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:05:38.428 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpOption'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:05:38.428 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:05:38.429 +05:30 [WRN] No store type was specified for the decimal property 'Charge' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:05:38.429 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'User'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:05:41.619 +05:30 [INF] Executed DbCommand (281ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM [Beneficiaries] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2024-09-28 11:05:41.763 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TopUpAPI.Models.Beneficiary, TopUpAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-28 11:05:41.843 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI) in 13206.1944ms
+2024-09-28 11:05:41.847 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:05:41.902 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - - - 200 - application/json;+charset=utf-8 13395.5201ms
+2024-09-28 11:05:48.984 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - -
+2024-09-28 11:05:48.989 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:05:48.990 +05:30 [INF] Route matched with {action = "GetBeneficiaries", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBeneficiaries(Int32) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:06:25.248 +05:30 [INF] Executed DbCommand (64ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM [Beneficiaries] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2024-09-28 11:06:25.249 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TopUpAPI.Models.Beneficiary, TopUpAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-28 11:06:25.250 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI) in 36260.3781ms
+2024-09-28 11:06:25.251 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:06:25.251 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - - - 200 - application/json;+charset=utf-8 36267.1519ms
+2024-09-28 11:06:52.446 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/add-beneficiary?userId=567&nickname=hg - 0
+2024-09-28 11:06:52.446 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.AddBeneficiary (TopUpAPI)'
+2024-09-28 11:06:52.517 +05:30 [INF] Route matched with {action = "AddBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBeneficiary(Int32, System.String) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:07:16.345 +05:30 [INF] Executed DbCommand (216ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:07:21.090 +05:30 [ERR] Error adding beneficiary
+System.Exception: User not found.
+   at TopUpAPI.Services.TopUpService.AddBeneficiary(Int32 userId, String nickname) in F:\CSharp\TopUpAPI\Services\TopUpService.cs:line 36
+   at TopUpAPI.Controllers.TopUpController.AddBeneficiary(Int32 userId, String nickname) in F:\CSharp\TopUpAPI\Controllers\TopUpController.cs:line 54
+2024-09-28 11:07:21.584 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-28 11:07:21.605 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.AddBeneficiary (TopUpAPI) in 29087.7096ms
+2024-09-28 11:07:21.606 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.AddBeneficiary (TopUpAPI)'
+2024-09-28 11:07:21.607 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/add-beneficiary?userId=567&nickname=hg - 0 - 500 - text/plain;+charset=utf-8 29163.2344ms
+2024-09-28 11:07:33.691 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/add-beneficiary?userId=123&nickname=Prakash - 0
+2024-09-28 11:07:33.692 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.AddBeneficiary (TopUpAPI)'
+2024-09-28 11:07:33.692 +05:30 [INF] Route matched with {action = "AddBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddBeneficiary(Int32, System.String) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:07:54.438 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:08:18.913 +05:30 [INF] Executed DbCommand (1,351ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 20), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Beneficiaries] ([MonthlyTopUpLimit], [MonthlyTopUpTotal], [Nickname], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-09-28 11:08:21.570 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-28 11:08:21.571 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.AddBeneficiary (TopUpAPI) in 47879.1854ms
+2024-09-28 11:08:21.572 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.AddBeneficiary (TopUpAPI)'
+2024-09-28 11:08:21.572 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/add-beneficiary?userId=123&nickname=Prakash - 0 - 200 - text/plain;+charset=utf-8 47882.8060ms
+2024-09-28 11:08:33.897 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - -
+2024-09-28 11:08:33.898 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:08:33.898 +05:30 [INF] Route matched with {action = "GetBeneficiaries", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBeneficiaries(Int32) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:08:38.673 +05:30 [INF] Executed DbCommand (325ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM [Beneficiaries] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2024-09-28 11:08:38.675 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TopUpAPI.Models.Beneficiary, TopUpAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-28 11:08:38.688 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI) in 4789.8402ms
+2024-09-28 11:08:38.688 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:08:38.689 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - - - 200 - application/json;+charset=utf-8 4791.3306ms
+2024-09-28 11:10:01.626 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1 application/json 1
+2024-09-28 11:10:01.626 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:10:01.645 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:10:22.010 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:10:52.431 +05:30 [ERR] Error processing top-up
+System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.CheckRequestBeforeSend(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetAsync(String requestUri)
+   at TopUpAPI.Services.TopUpService.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Services\TopUpService.cs:line 70
+   at TopUpAPI.Controllers.TopUpController.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Controllers\TopUpController.cs:line 74
+2024-09-28 11:10:52.435 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-28 11:10:52.436 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI) in 50790.9544ms
+2024-09-28 11:10:52.436 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:10:52.437 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1 application/json 1 - 500 - text/plain;+charset=utf-8 50812.4269ms
+2024-09-28 11:14:49.576 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 11:14:49.640 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 11:14:49.680 +05:30 [INF] Hosting environment: Development
+2024-09-28 11:14:49.681 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 11:14:50.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 11:14:50.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 11:14:50.818 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1185.6806ms
+2024-09-28 11:14:50.818 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 25.5704ms
+2024-09-28 11:14:50.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 189.5432ms
+2024-09-28 11:14:51.015 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 11:14:51.252 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 236.5096ms
+2024-09-28 11:15:15.652 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=78&beneficiaryId=1 application/json 1
+2024-09-28 11:15:15.696 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:15:15.795 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:16:56.056 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 11:16:56.120 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 11:16:56.158 +05:30 [INF] Hosting environment: Development
+2024-09-28 11:16:56.158 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 11:16:57.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 11:16:57.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 11:16:57.222 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1113.1912ms
+2024-09-28 11:16:57.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 34.2836ms
+2024-09-28 11:16:57.382 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 165.9205ms
+2024-09-28 11:16:57.495 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 11:16:57.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 242.1441ms
+2024-09-28 11:17:25.271 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=550 - 0
+2024-09-28 11:17:25.331 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:17:25.410 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:17:31.119 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:17:31.120 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpTotal' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:17:31.121 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpOption'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:17:31.122 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:17:31.123 +05:30 [WRN] No store type was specified for the decimal property 'Charge' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:17:31.124 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'User'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:17:34.583 +05:30 [INF] Executed DbCommand (203ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:17:35.141 +05:30 [ERR] Error processing top-up
+System.Exception: Monthly top-up limit exceeded for this beneficiary.
+   at TopUpAPI.Services.TopUpService.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Services\TopUpService.cs:line 63
+   at TopUpAPI.Controllers.TopUpController.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Controllers\TopUpController.cs:line 74
+2024-09-28 11:17:35.239 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-28 11:17:35.262 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI) in 9836.1771ms
+2024-09-28 11:17:35.267 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:17:35.310 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=550 - 0 - 500 - text/plain;+charset=utf-8 10038.8239ms
+2024-09-28 11:17:42.227 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=550 - 0
+2024-09-28 11:17:42.231 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:17:42.232 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:17:55.830 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:18:13.443 +05:30 [ERR] Error processing top-up
+System.Exception: Monthly top-up limit exceeded for this beneficiary.
+   at TopUpAPI.Services.TopUpService.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Services\TopUpService.cs:line 63
+   at TopUpAPI.Controllers.TopUpController.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Controllers\TopUpController.cs:line 74
+2024-09-28 11:18:13.445 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-28 11:18:13.447 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI) in 31213.9027ms
+2024-09-28 11:18:13.447 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:18:13.448 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=550 - 0 - 500 - text/plain;+charset=utf-8 31220.6666ms
+2024-09-28 11:18:16.942 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=550 - 0
+2024-09-28 11:18:16.943 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:18:16.943 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:18:30.301 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:20:47.909 +05:30 [ERR] Error processing top-up
+System.Exception: Monthly top-up limit exceeded for this beneficiary.
+   at TopUpAPI.Services.TopUpService.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Services\TopUpService.cs:line 63
+   at TopUpAPI.Controllers.TopUpController.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Controllers\TopUpController.cs:line 74
+2024-09-28 11:20:47.914 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-28 11:20:47.915 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI) in 150971.0426ms
+2024-09-28 11:20:47.915 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:20:47.915 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=550 - 0 - 500 - text/plain;+charset=utf-8 150972.6863ms
+2024-09-28 11:20:55.801 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=250 - 0
+2024-09-28 11:20:55.802 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:20:55.802 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:21:04.794 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:22:20.839 +05:30 [ERR] Error processing top-up
+System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.CheckRequestBeforeSend(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetAsync(String requestUri)
+   at TopUpAPI.Services.TopUpService.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Services\TopUpService.cs:line 70
+   at TopUpAPI.Controllers.TopUpController.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Controllers\TopUpController.cs:line 74
+2024-09-28 11:22:20.845 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-28 11:22:20.847 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI) in 85044.7684ms
+2024-09-28 11:22:20.847 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:22:20.847 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=250 - 0 - 500 - text/plain;+charset=utf-8 85045.9198ms
+2024-09-28 11:22:33.869 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=150 - 0
+2024-09-28 11:22:33.869 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:22:33.869 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:22:47.519 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:23:31.935 +05:30 [ERR] Error processing top-up
+System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.CheckRequestBeforeSend(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.GetAsync(String requestUri)
+   at TopUpAPI.Services.TopUpService.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Services\TopUpService.cs:line 70
+   at TopUpAPI.Controllers.TopUpController.TopUpBeneficiary(Int32 userId, Int32 beneficiaryId, Decimal amount) in F:\CSharp\TopUpAPI\Controllers\TopUpController.cs:line 74
+2024-09-28 11:23:31.935 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-09-28 11:23:31.936 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI) in 58066.4659ms
+2024-09-28 11:23:31.936 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:23:31.937 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=150 - 0 - 500 - text/plain;+charset=utf-8 58067.8198ms
+2024-09-28 11:27:21.773 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 11:27:21.879 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 11:27:21.911 +05:30 [INF] Hosting environment: Development
+2024-09-28 11:27:21.911 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 11:27:22.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 11:27:22.533 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 11:27:22.535 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 682.4804ms
+2024-09-28 11:27:22.566 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 25.6901ms
+2024-09-28 11:27:22.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.4949ms
+2024-09-28 11:27:23.028 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 11:27:23.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.7596ms
+2024-09-28 11:27:48.205 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=150 - 0
+2024-09-28 11:27:48.232 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:27:48.293 +05:30 [INF] Route matched with {action = "TopUpBeneficiary", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TopUpBeneficiary(Int32, Int32, System.Decimal) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:27:52.488 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:27:52.489 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpTotal' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:27:52.489 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpOption'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:27:52.490 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:27:52.490 +05:30 [WRN] No store type was specified for the decimal property 'Charge' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:27:52.490 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'User'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 11:27:54.497 +05:30 [INF] Executed DbCommand (121ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 11:27:55.925 +05:30 [INF] Executed DbCommand (499ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = DateTime2), @p7='?' (DbType = Int32), @p6='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Beneficiaries] SET [MonthlyTopUpTotal] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+INSERT INTO [TopUpTransactions] ([Amount], [BeneficiaryId], [Charge], [Date])
+OUTPUT INSERTED.[Id]
+VALUES (@p2, @p3, @p4, @p5);
+UPDATE [Users] SET [MonthlyTopUpLimit] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2024-09-28 11:27:56.081 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-28 11:27:56.091 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI) in 7791.3986ms
+2024-09-28 11:27:56.094 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.TopUpBeneficiary (TopUpAPI)'
+2024-09-28 11:27:56.114 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44330/api/TopUp/top-up?userId=123&beneficiaryId=1&amount=150 - 0 - 200 - text/plain;+charset=utf-8 7908.8827ms
+2024-09-28 11:28:10.042 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - -
+2024-09-28 11:28:10.045 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:28:10.050 +05:30 [INF] Route matched with {action = "GetBeneficiaries", controller = "TopUp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBeneficiaries(Int32) on controller TopUpAPI.Controllers.TopUpController (TopUpAPI).
+2024-09-28 11:28:12.000 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM [Beneficiaries] AS [b]
+WHERE [b].[UserId] = @__userId_0
+2024-09-28 11:28:12.006 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TopUpAPI.Models.Beneficiary, TopUpAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-28 11:28:12.084 +05:30 [INF] Executed action TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI) in 2033.4197ms
+2024-09-28 11:28:12.084 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.TopUpController.GetBeneficiaries (TopUpAPI)'
+2024-09-28 11:28:12.085 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/TopUp/beneficiaries?userId=123 - - - 200 - application/json;+charset=utf-8 2042.4581ms
+2024-09-28 13:54:40.161 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 13:54:40.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger - -
+2024-09-28 13:54:40.398 +05:30 [INF] Hosting environment: Development
+2024-09-28 13:54:40.398 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 13:54:40.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 13:54:40.875 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger - - - 301 - - 681.0343ms
+2024-09-28 13:54:43.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 2891.6775ms
+2024-09-28 13:54:44.181 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/swagger-ui-standalone-preset.js - -
+2024-09-28 13:54:44.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/swagger-ui-bundle.js - -
+2024-09-28 13:54:44.307 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/swagger-ui.css - -
+2024-09-28 13:54:44.359 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 13:54:44.452 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 13:54:44.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 155.8653ms
+2024-09-28 13:54:44.676 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-28 13:54:44.681 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/swagger-ui.css - - - 200 143632 text/css 373.8334ms
+2024-09-28 13:54:44.686 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-28 13:54:44.707 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 525.9373ms
+2024-09-28 13:54:44.959 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 507.3296ms
+2024-09-28 13:54:45.223 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-28 13:54:45.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 990.1450ms
+2024-09-28 13:54:45.581 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 13:54:45.777 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 195.3201ms
+2024-09-28 13:58:10.175 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 13:58:10.215 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 13:58:10.275 +05:30 [INF] Hosting environment: Development
+2024-09-28 13:58:10.275 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 13:58:11.238 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1033.1874ms
+2024-09-28 13:58:11.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 13:58:11.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 13:58:11.329 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 25.2721ms
+2024-09-28 13:58:11.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 111.8954ms
+2024-09-28 13:58:11.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 13:58:12.513 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 878.4718ms
+2024-09-28 13:58:59.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/User/123 - -
+2024-09-28 13:59:00.114 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 13:59:00.779 +05:30 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TopUpAPI.Models.User]] GetUser(Int32) on controller TopUpAPI.Controllers.UserController (TopUpAPI).
+2024-09-28 13:59:06.087 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 13:59:06.087 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpTotal' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 13:59:06.088 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpOption'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 13:59:06.088 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 13:59:06.088 +05:30 [WRN] No store type was specified for the decimal property 'Charge' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 13:59:06.089 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'User'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 13:59:28.281 +05:30 [ERR] An error occurred using the connection to database 'master' on server 'LAPTOP-O9C5T26H\SQLEXPRESS'.
+2024-09-28 13:59:28.698 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TopUpAPI.DataAccess.TopUpDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Shared Memory Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Shared Memory Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-09-28 13:59:29.362 +05:30 [INF] Executed action TopUpAPI.Controllers.UserController.GetUser (TopUpAPI) in 28570.5329ms
+2024-09-28 13:59:29.418 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 13:59:29.486 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Shared Memory Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TopUpAPI.Services.UserService.GetUser(Int32 id) in F:\CSharp\TopUpAPI\Services\UserService.cs:line 26
+   at TopUpAPI.Controllers.UserController.GetUser(Int32 id) in F:\CSharp\TopUpAPI\Controllers\UserController.cs:line 30
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2024-09-28 13:59:29.829 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/User/123 - - - 500 - text/plain;+charset=utf-8 30090.4213ms
+2024-09-28 14:00:55.711 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/User/123 - -
+2024-09-28 14:00:55.726 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:00:55.727 +05:30 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TopUpAPI.Models.User]] GetUser(Int32) on controller TopUpAPI.Controllers.UserController (TopUpAPI).
+2024-09-28 14:01:11.808 +05:30 [INF] Executed DbCommand (1,821ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 14:01:12.225 +05:30 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ActionResult`1[[TopUpAPI.Models.User, TopUpAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-09-28 14:01:12.370 +05:30 [INF] Executed action TopUpAPI.Controllers.UserController.GetUser (TopUpAPI) in 16643.4644ms
+2024-09-28 14:01:12.370 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:01:12.371 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/User/123 - - - 200 - application/json;+charset=utf-8 16660.2512ms
+2024-09-28 14:01:41.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/User/123 - -
+2024-09-28 14:01:41.372 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:01:41.373 +05:30 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TopUpAPI.Models.User]] GetUser(Int32) on controller TopUpAPI.Controllers.UserController (TopUpAPI).
+2024-09-28 14:01:48.436 +05:30 [INF] Executed DbCommand (452ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 14:02:24.353 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 14:02:24.394 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 14:02:24.449 +05:30 [INF] Hosting environment: Development
+2024-09-28 14:02:24.450 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 14:02:25.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 14:02:25.502 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 14:02:25.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 16.1609ms
+2024-09-28 14:02:25.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1160.7416ms
+2024-09-28 14:02:25.658 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 156.5132ms
+2024-09-28 14:02:25.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 14:02:26.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 314.5463ms
+2024-09-28 14:02:54.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/User/123 - -
+2024-09-28 14:02:54.053 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:02:54.138 +05:30 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TopUpAPI.Models.User]] GetUser(Int32) on controller TopUpAPI.Controllers.UserController (TopUpAPI).
+2024-09-28 14:02:59.828 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:02:59.829 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpTotal' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:02:59.830 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpOption'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:02:59.830 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:02:59.831 +05:30 [WRN] No store type was specified for the decimal property 'Charge' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:02:59.831 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'User'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:03:02.940 +05:30 [INF] Executed DbCommand (213ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 14:03:03.226 +05:30 [INF] Executing OkObjectResult, writing value of type 'TopUpAPI.Models.User'.
+2024-09-28 14:03:03.288 +05:30 [INF] Executed action TopUpAPI.Controllers.UserController.GetUser (TopUpAPI) in 9137.051ms
+2024-09-28 14:03:03.293 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:03:03.332 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/User/123 - - - 200 - application/json;+charset=utf-8 9326.9253ms
+2024-09-28 14:03:10.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/User/1 - -
+2024-09-28 14:03:10.179 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:03:10.180 +05:30 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TopUpAPI.Models.User]] GetUser(Int32) on controller TopUpAPI.Controllers.UserController (TopUpAPI).
+2024-09-28 14:03:11.867 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 14:03:11.868 +05:30 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-09-28 14:03:11.869 +05:30 [INF] Executed action TopUpAPI.Controllers.UserController.GetUser (TopUpAPI) in 1688.6675ms
+2024-09-28 14:03:11.869 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:03:11.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/User/1 - - - 204 0 - 1742.3506ms
+2024-09-28 14:05:25.300 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 14:05:25.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 14:05:25.403 +05:30 [INF] Hosting environment: Development
+2024-09-28 14:05:25.406 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 14:05:26.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 14:05:26.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 14:05:26.398 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1064.1167ms
+2024-09-28 14:05:26.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 33.8811ms
+2024-09-28 14:05:26.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 143.2990ms
+2024-09-28 14:05:26.624 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 14:05:26.945 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 321.3124ms
+2024-09-28 14:05:44.729 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/api/User/1 - -
+2024-09-28 14:05:44.758 +05:30 [INF] Executing endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:05:44.846 +05:30 [INF] Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TopUpAPI.Models.User]] GetUser(Int32) on controller TopUpAPI.Controllers.UserController (TopUpAPI).
+2024-09-28 14:05:49.674 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:05:49.675 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpTotal' on entity type 'Beneficiary'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:05:49.676 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpOption'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:05:49.676 +05:30 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:05:49.676 +05:30 [WRN] No store type was specified for the decimal property 'Charge' on entity type 'TopUpTransaction'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:05:49.677 +05:30 [WRN] No store type was specified for the decimal property 'MonthlyTopUpLimit' on entity type 'User'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-09-28 14:05:52.923 +05:30 [INF] Executed DbCommand (219ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[IsVerified], [t].[MonthlyTopUpLimit], [t].[Username], [b].[Id], [b].[MonthlyTopUpLimit], [b].[MonthlyTopUpTotal], [b].[Nickname], [b].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[IsVerified], [u].[MonthlyTopUpLimit], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Beneficiaries] AS [b] ON [t].[Id] = [b].[UserId]
+ORDER BY [t].[Id]
+2024-09-28 14:05:53.076 +05:30 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-09-28 14:05:53.088 +05:30 [INF] Executed action TopUpAPI.Controllers.UserController.GetUser (TopUpAPI) in 8232.0167ms
+2024-09-28 14:05:53.092 +05:30 [INF] Executed endpoint 'TopUpAPI.Controllers.UserController.GetUser (TopUpAPI)'
+2024-09-28 14:05:53.127 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/api/User/1 - - - 204 0 - 8398.0389ms
+2024-09-28 14:08:22.916 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-28 14:08:22.963 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/index.html - -
+2024-09-28 14:08:23.025 +05:30 [INF] Hosting environment: Development
+2024-09-28 14:08:23.026 +05:30 [INF] Content root path: F:\CSharp\TopUpAPI\
+2024-09-28 14:08:23.997 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - -
+2024-09-28 14:08:23.997 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/_vs/browserLink - -
+2024-09-28 14:08:24.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/index.html - - - 200 - text/html;charset=utf-8 1053.6343ms
+2024-09-28 14:08:24.053 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_framework/aspnetcore-browser-refresh.js - - - 200 11973 application/javascript;+charset=utf-8 40.3276ms
+2024-09-28 14:08:24.138 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 140.8234ms
+2024-09-28 14:08:24.203 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - -
+2024-09-28 14:08:24.480 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44330/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 277.0895ms
