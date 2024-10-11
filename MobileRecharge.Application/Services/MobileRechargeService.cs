@@ -33,13 +33,19 @@ namespace TelecomProviderAPI.Services
 
         public async Task<bool> TopUpBeneficiary(int userId, int beneficiaryId, decimal amount)
         {
-            var res= await _unitOfWork.MobileRechargeRepository.TopUpBeneficiary(userId, beneficiaryId, amount);
-            
-            if(res)
-            {
-                await _unitOfWork.CompleteAsync();
-            }
-            return res;
+            await _unitOfWork.MobileRechargeRepository.TopUpBeneficiary(userId, beneficiaryId, amount);
+
+            var balance = await _unitOfWork.MobileRechargeRepository.GetUserBalance(userId);
+
+            await _unitOfWork.MobileRechargeRepository.ValidateUserBalance(balance, amount);
+
+            await _unitOfWork.MobileRechargeRepository.DoPayment(userId, amount);
+
+            await _unitOfWork.MobileRechargeRepository.UpdateTransaction(userId, beneficiaryId, amount);
+
+            await _unitOfWork.CompleteAsync();
+
+            return true;
         }
     }
 }

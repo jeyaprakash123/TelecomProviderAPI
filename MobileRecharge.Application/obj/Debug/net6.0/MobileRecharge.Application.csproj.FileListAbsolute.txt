@@ -23,6 +23,7 @@ E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Applicati
 E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.AssemblyInfoInputs.cache
 E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.AssemblyInfo.cs
 E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.csproj.CoreCompileInputs.cache
+E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.sourcelink.json
 E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\MobileRe.F31B96C5.Up2Date
 E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.dll
 E:\Projects\MobileRecharge.Application\obj\Debug\net6.0\refint\MobileRecharge.Application.dll

@@ -37,20 +37,9 @@ namespace TopUpAPI.Services
         }
         public async Task<User> CreateUserAsync(User user)
         {
-
-            // GET request to the balance balance service
-            var response = await _httpClient.GetAsync($"get-user-balance?userId={user.Id}");
-            if (!response.IsSuccessStatusCode)
-            {
-                // Handle the error accordingly
-                var errorMessage = await response.Content.ReadAsStringAsync();
-                throw new Exception($"Failed to fetch balance: {errorMessage}");
-            }
-            // Parse the balance from the response
-            var balanceContent = await response.Content.ReadAsStringAsync();
-            var balance = decimal.Parse(balanceContent);
-            user.AvailableBalance=balance;
+            user.AvailableBalance = await _unitOfWork.MobileRechargeRepository.GetUserBalance(user.Id);
             var result= await _unitOfWork.UserRepository.CreateUserAsync(user);
+            
             await _unitOfWork.CompleteAsync();
             return result;
         }

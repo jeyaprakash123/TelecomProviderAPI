@@ -18,7 +18,7 @@ namespace MobileRecharge.UnitTests.Controller
         public UserControllerTests()
         {
             _userServiceMock = new Mock<IUserService>();
-            _controller = new UserController(_userServiceMock.Object, null); // Pass null for IConfiguration if not needed
+            _controller = new UserController(_userServiceMock.Object, null);
         }
 
         [Fact]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MobileRecharge.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a0830239c8c64565a6fa51e2d13e87d26fe38e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MobileRecharge.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MobileRecharge.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

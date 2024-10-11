@@ -33,7 +33,7 @@ namespace TelecomProviderAPI.Infrastructure.Repositories
             return await _context.TopUpOptions.ToListAsync();
         }
 
-        public async Task<bool> TopUpBeneficiary(int userId, int beneficiaryId, decimal amount)
+        public async Task TopUpBeneficiary(int userId, int beneficiaryId, decimal amount)
         {
             var user = await _context.Users.AsNoTracking().Include(u => u.Beneficiaries).ThenInclude(b => b.BeneficiaryTopUp)
                 .FirstOrDefaultAsync(u => u.Id == userId);
@@ -50,10 +50,9 @@ namespace TelecomProviderAPI.Infrastructure.Repositories
 
             var userTotalTopUpsThisMonth = CheckUserMonthlyLimit(userId);
 
-            bool isAvail = _context.TopUpOptions.AsNoTracking().Any(t => t.Amount == amount);
-            if (!isAvail) throw new Exception("TopUp Plan is Invalid...");
+            await ValidatePlan(amount);
 
-            if (!CanTopUp(beneficiaryId, amount, totalTopUpsThisMonth))
+            if (!UserTopUpLimitPerMonth(beneficiaryId, amount, totalTopUpsThisMonth))
                 throw new Exception("User top-up Limit exceed for this month...Please wait until next month");
 
             if (totalTopUpsThisMonth + amount > beneficiary.MonthlyTopUpLimit)
@@ -64,13 +63,40 @@ namespace TelecomProviderAPI.Infrastructure.Repositories
 
             if (userTotalTopUpsThisMonth > user.TotalTopUpLimit)
                 throw new Exception("Monthly top-up limit exceeded for all beneficiaries.");
+        }
 
-            var balance = await GetUserBalance(userId);
-
-            // Check if the user has sufficient balance
+        public async Task ValidateUserBalance(decimal balance,decimal amount)
+        {
             if (balance < amount)
                 throw new Exception("Insufficient balance.");
+        }
+        public async Task ValidatePlan(decimal amount)
+        {
+            bool isAvail = _context.TopUpOptions.AsNoTracking().Any(t => t.Amount == amount);
+            if (!isAvail) throw new Exception("TopUp Plan is Invalid...");
+        }
+        public async Task UpdateTransaction(int userId,int beneficiaryId,decimal amount)
+        {
+            var _user = await _context.Users.FindAsync(userId);
+            if (_user == null)
+            {
+                throw new Exception("Failed to update user balance...");
+            }
+            _user.AvailableBalance = await GetUserBalance(userId);
+            var beneficiaryTopUp = new BeneficiaryTopUpDetails
+            {
+                UserId = userId,
+                BeneficiaryId = beneficiaryId,
+                Amount = amount,
+                Charge = _appSettings.ChargeFee,
+                MonthWise = DateTime.Now.Month,
+                YearWise = DateTime.Now.Year
+            };
 
+            _context.BeneficiaryTopUpDetails.Add(beneficiaryTopUp);
+        }
+        public async Task DoPayment(int userId,decimal amount)
+        {
             decimal TotalAmount = amount + _appSettings.ChargeFee;
 
             // POST request to deduct the balance
@@ -81,24 +107,6 @@ namespace TelecomProviderAPI.Infrastructure.Repositories
             {
                 throw new Exception("Failed to deduct balance from balance service.");
             }
-            var _user = await _context.Users.FindAsync(userId);
-            if (_user == null)
-            {
-                throw new Exception("Failed to update user balance...");
-            }
-            _user.AvailableBalance=await GetUserBalance(userId);
-            var beneficiaryTopUp = new BeneficiaryTopUpDetails
-            {
-                UserId = userId,
-                BeneficiaryId = beneficiaryId,
-                Amount = amount,
-                Charge = _appSettings.ChargeFee,
-                MonthWise = DateTime.Now.Month,
-                YearWise = DateTime.Now.Year
-            };
-            
-            _context.BeneficiaryTopUpDetails.Add(beneficiaryTopUp);
-            return true;
         }
         public async Task<decimal> GetUserBalance(int userId)
         {
@@ -112,14 +120,14 @@ namespace TelecomProviderAPI.Infrastructure.Repositories
             var balance=decimal.Parse(balanceContent);
             return balance;
         }
-        public bool CanTopUp(int beneficiaryId, decimal amount, decimal totalTopUpsThisMonth)
+        public bool UserTopUpLimitPerMonth(int beneficiaryId, decimal amount, decimal totalTopUpsThisMonth)
         {
             var beneficiary = _context.Beneficiaries.AsNoTracking().FirstOrDefaultAsync(u => u.Id == beneficiaryId);
             if (totalTopUpsThisMonth + amount > beneficiary.Result.MonthlyTopUpLimit)
             {
-                return false; // User cannot top-up
+                return false;
             }
-            return true; // User can top-up
+            return true; 
         }
         public decimal CheckUserMonthlyLimit(int userId)
         {

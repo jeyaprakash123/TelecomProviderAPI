@@ -7,7 +7,6 @@ namespace MobileRecharge.API.Middleware
     public class ErrorHandlingMiddleware
     {
         private readonly RequestDelegate _next;
-
         public ErrorHandlingMiddleware(RequestDelegate next)
         {
             _next = next;
@@ -31,7 +30,7 @@ namespace MobileRecharge.API.Middleware
 
             var result = JsonSerializer.Serialize(new { error = ex.Message });
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError; // Or another appropriate status code
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
             return context.Response.WriteAsync(result);
         }
     }

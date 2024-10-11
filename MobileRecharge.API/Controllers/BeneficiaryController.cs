@@ -22,37 +22,20 @@ namespace TopUpAPI.Controllers
         [HttpGet("beneficiaries")]
         public async Task<IActionResult> GetBeneficiaries(int userId)
         {
-            try
-            {
-                var beneficiaries = await _topUpService.GetBeneficiaries(userId);
-                return Ok(beneficiaries);
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex, "Error fetching beneficiaries");
-                return StatusCode(500, ex.Message);
-            }
+
+            var beneficiaries = await _topUpService.GetBeneficiaries(userId);
+            return Ok(beneficiaries);
+
         }
 
         [HttpPost("add-beneficiary")]
-        
-        public async Task<IActionResult> AddBeneficiary(int userId,string nickname)
+
+        public async Task<IActionResult> AddBeneficiary(int userId, string nickname)
         {
-            try
-            {
-                bool result = await _topUpService.AddBeneficiary(userId, nickname);
-                return result ? Ok("Beneficiary added successfully") : BadRequest("Failed to add beneficiary");
-            }
-            catch (ArgumentException ex)
-            {
-                Log.Error(ex, "Validation error adding beneficiary");
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Log.Error(ex, "Error adding beneficiary");
-                return StatusCode(500, ex.Message);
-            }
+
+            bool result = await _topUpService.AddBeneficiary(userId, nickname);
+            return result ? Ok("Beneficiary added successfully") : BadRequest("Failed to add beneficiary");
+
         }
 
         [HttpDelete("beneficiaryid")]

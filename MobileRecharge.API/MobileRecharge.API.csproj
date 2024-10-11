@@ -31,7 +31,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MobileRecharge.Application\MobileRecharge.Application.csproj" />
-    <ProjectReference Include="..\MobileRecharge.Domain\MobileRecharge.Domain.csproj" />
     <ProjectReference Include="..\MobileRecharge.Infrastructure\MobileRecharge.Infrastructure.csproj" />
   </ItemGroup>
 

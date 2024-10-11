@@ -18,6 +18,7 @@ E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\MobileRecharge.Domain.Generat
 E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\MobileRecharge.Domain.AssemblyInfoInputs.cache
 E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\MobileRecharge.Domain.AssemblyInfo.cs
 E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\MobileRecharge.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\MobileRecharge.Domain.sourcelink.json
 E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\MobileRecharge.Domain.dll
 E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\refint\MobileRecharge.Domain.dll
 E:\Projects\MobileRecharge.Domain\obj\Debug\net6.0\MobileRecharge.Domain.pdb
